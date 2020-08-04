@@ -2,6 +2,7 @@ import React ,{ useState } from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
+import Button from '../../../components/Button';
 
 function CadastroCategoria() {
 
@@ -57,7 +58,7 @@ function CadastroCategoria() {
                     <label>
                     Descrição: 
                     <textarea
-                        type="text"
+                        type="textarea"
                         value={values.descricao}
                         name="descricao"
                         onChange={hendleChange}
@@ -69,13 +70,13 @@ function CadastroCategoria() {
                     label="Cor: "
                     type="color"
                     name="cor" 
-                    value={values.nome}
+                    value={values.color}
                     onChange={hendleChange}
                 />
 
-                <button>
+                <Button>
                     Cadastrar
-                </button>
+                </Button>
             </form>
             
             <ul>
